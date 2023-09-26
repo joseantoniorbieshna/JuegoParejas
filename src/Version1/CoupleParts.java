@@ -1,3 +1,4 @@
+package Version1;
 
 
 
@@ -106,7 +107,7 @@ public class CoupleParts {
 		System.out.print("   ");
 		System.out.print("â•”");
 		for (int i = 0; i < matriz.length; i++) {
-			System.out.print("â•â•â•â•");
+			System.out.print("â•?â•?â•?â•?");
 			if (i != matriz.length - 1)
 				System.out.print("â•¦");
 		}
@@ -128,7 +129,7 @@ public class CoupleParts {
 				System.out.print("   ");
 				System.out.print("â• ");
 				for (int j = 0; j < matriz.length; j++) {
-					System.out.print("â•â•â•â•");
+					System.out.print("â•?â•?â•?â•?");
 					if (j != matriz.length - 1)
 						System.out.print("â•¬");
 				}
@@ -137,11 +138,11 @@ public class CoupleParts {
 				System.out.print("   ");
 				System.out.print("â•š");
 				for (int h = 0; h < matriz.length; h++) {
-					System.out.print("â•â•â•â•");
+					System.out.print("â•?â•?â•?â•?");
 					if (h != matriz.length - 1)
 						System.out.print("â•©");
 				}
-				System.out.println("â•");
+				System.out.println("â•?");
 			}
 		}
 	}
@@ -201,19 +202,6 @@ public class CoupleParts {
 		}
 	}
 
-	/**
-	 * Coloca aleatoriamente las parejas sobre el tablero
-	 * 
-	 * @return
-	 */
-	public static int[][] crearTablero() {
-		// Los archivos no se reconocen bien siestan en el
-		// default package por eso creamos el package Juego
-		int[][] tablero = new int[Constantes.size][Constantes.size];
-		CoupleParts.rellenarOrdenado(tablero);
-		CoupleParts.intercambiarPosiciones(tablero);
-		return tablero;
-	}
 
 	/**
 	 * Rellenar de -1 todas las fichas de ocultas
